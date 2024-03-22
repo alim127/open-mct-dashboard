@@ -1,0 +1,513 @@
+{
+    "name": "CubeSat",
+    "key": "cs",
+    "measurements": [
+        {
+            "name": "unint16_t vboost",
+            "key": "vboost",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "kilograms",
+                    "format": "integer",
+                    "min": 0,
+                    "max": 100,
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint16_t vbatt",
+            "key": "vbatt",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "format": "integer",
+                    "min": 0,
+                    "max": 100,
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Received",
+            "key": "comms.recd",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "bytes",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Sent",
+            "key": "comms.sent",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "bytes",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint16 curout",
+            "key": "curout",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "℃",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint16 curin",
+            "key": "curin",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Amps",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint16_t cursun",
+            "key": "cursun",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint16_t cursys",
+            "key": "cursys",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "int16_t temp",
+            "key": "temp",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint8_t out_val",
+            "key": "out.val",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint8_t battmode",
+            "key": "battmode",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint8_t pptmode",
+            "key": "pptmode",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t wdtI2cS",
+            "key": "wdtI2cS",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t wdtGndS",
+            "key": "wdtGndS",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t bootcount",
+            "key": "bootcount",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t cntWdtI2c",
+            "key": "cntWdtI2c",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t cntWdtGnd",
+            "key": "cntWdtGnd",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t cntWdtCsp",
+            "key": "cntWdtCsp",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t wdtCspC",
+            "key": "wdtCspC",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "float",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint32_t latchups",
+            "key": "latchups",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        },
+        {
+            "name": "uint8_t bootcause",
+            "key": "bootcause",
+            "values": [
+                {
+                    "key": "value",
+                    "name": "Value",
+                    "units": "Volts",
+                    "format": "integer",
+                    "hints": {
+                        "range": 1
+                    }
+                },
+                {
+                    "key": "utc",
+                    "source": "timestamp",
+                    "name": "Timestamp",
+                    "format": "utc",
+                    "hints": {
+                        "domain": 1
+                    }
+                }
+            ]
+        }
+    ]
+}
